@@ -1,0 +1,130 @@
+num = 10
+
+float = 3.5
+
+string = "Davide"
+
+bool = True
+
+complex = 5j
+
+print (type(num))
+
+message = "Egli disse :\" Che bella giornata!\""
+print(message)
+
+name =" Alfio"
+
+age = 32
+
+print( f"Mi chiamo {name} e ho {age} anni,ciao a tutti")
+
+numbers =[10,20,30]
+
+x, y, z = numbers
+
+print(numbers[2])
+print(y)
+print(x)
+print(z)
+
+colleagues =[
+    ["Marco","Carbonara"],
+    ["Claudio","Grieco"],
+    ["Michele","Scommenta"]
+]
+
+print(colleagues[1][1])
+
+x = 67
+y= 76
+
+x,y = (y,x)
+
+print(x,y)
+
+friend = {
+'name' : 'Almaro',
+'surname' : 'Geltrude',
+'age' : 34,
+'contract' :{
+'duration': 'infinite',
+'remote' : True    
+} 
+}
+
+print ( friend.get('contract').get('remote'))
+
+animals = {'dog','cat','wolf','fish'}
+print(animals)
+
+
+vote = 60
+
+if vote > 60:
+    print('Promosso!')
+elif vote == 60:
+    print('Promosso però rimandato!')
+else:
+    print('Bocciato!')      
+
+
+for i in range (0, 11, 2):
+    print(i)
+
+min = -5
+max = 10
+counter = 0
+
+for i in range (min,max +1):
+   if i % 2 == 0:
+      print(i, 'pari')
+      counter += 1
+
+   if counter >= 6:
+    break
+
+i = 2
+
+while  i <= 10:
+    print(i)
+    i +=3
+
+
+def hello(name):
+    print("Hi,"+ name +"!")
+hello("Vincenzo")    
+hello("Davide")    
+hello("Sara")    
+hello("Lisa")    
+
+
+x= 45
+y= 75
+
+def sum(a,b) :
+   print(a+b)
+   print(a/b )
+   print(a*b )
+   print(a-b )
+
+
+sum(x,y) # se si dimentica di mettere il secondo parametro  la funziona prende il parametro default   
+sum(y,z)
+sum(y,z)
+sum(a=y,b=z)
+
+
+
+z=5
+x=15
+w=6
+
+def sommatoria(*numbers):
+   result=0
+   for number in numbers:
+       result += number
+       return result 
+   func_result= sommatoria(z,x,w)
+
+   print(func_result)
